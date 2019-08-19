@@ -1,0 +1,25 @@
+server:
+  port: 5000
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/local
+    username: ######
+    password: ######
+    type: com.alibaba.druid.pool.DruidDataSource
+  mvc:
+    view:
+      suffix: .html
+
+mybatis:
+  type-aliases-package: com.michael.hdujwc.mapper
+  mapper-locations: classpath:/**.xml
+
+pagehelper:
+  helper-dialect: mysql
+  reasonable: true
+  support-methods-arguments: true
+  params: count=countSql
+logging:
+  path: /home/log
+  file: /home/log/hdujwc.log
