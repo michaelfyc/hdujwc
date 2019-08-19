@@ -1,0 +1,238 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+    margin: 0;
+    padding: 0px;
+}
+
+body {
+    font-size: 12px;
+    line-height: 2;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #dd1a00;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.clear {
+    clear: both;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    overflow: hidden;
+}
+
+.font_blue {
+    color: #255b9f;
+}
+
+.font_red {
+    color: #dd1a00;
+}
+
+.font_red:hover {
+    text-decoration: underline;
+}
+
+.font_white {
+    color: #fff;
+}
+
+/*****newsList*****/
+.content_page {
+    width: 960px;
+    margin: 10px auto;
+}
+
+.menu {
+    float: left;
+    width: 185px;
+    min-height: 640px;
+    height: 100%;
+    _height: 640px;
+    border: 1px #eee solid;
+    background: #fff;
+}
+
+.menu_tit {
+    text-align: center;
+    line-height: 65px;
+    height: 65px;
+    color: #fff;
+    background: #43678e;
+    border-bottom: 1px dotted #c7c7c7;
+    font-size: 16px;
+    font-family: 'Microsoft Yahei', Tahoma, Helvetica, Arial, sans-serif;
+    letter-spacing: 1px;
+}
+
+.menu ul li {
+    border-bottom: 1px dotted #c7c7c7;
+}
+
+.menu ul li a {
+    display: block;
+    line-height: 46px;
+    border-left: 2px solid #D6D4D5;
+    padding-left: 20px;
+    font-size: 14px;
+    font-family: 'Microsoft Yahei', Tahoma, Helvetica, Arial, sans-serif;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+.menu ul li a:hover, .menu ul li a.on {
+    background: #EDF4FC;
+    border-left-color: #44658E;
+    color: #255b9f;
+}
+
+.page {
+    float: right;
+    width: 755px;
+    border: 1px solid #eee;
+    overflow: hidden;
+    background: #fff;
+    margin-right: 100px
+}
+
+.page_divide {
+    margin: 0px auto;
+    padding: 15px;
+    height: 20px;
+}
+
+.p_btns {
+    display: inline;
+    margin: 10px auto;
+    width: 100%;
+    font-size: 12px;
+}
+
+.p_btns .total_count {
+    float: right;
+    padding-top: 3px;
+    line-height: 16px;
+}
+
+.p_btns a {
+    display: block;
+    float: left;
+    margin-right: 4px;
+    padding: 1px 3px;
+    border: 1px solid #DDD;
+    background: #FFF;
+    height: 16px;
+    line-height: 16px;
+    text-decoration: none;
+    color: #1963A3;
+    font-size: 12px;
+    text-align: center;
+}
+
+.p_btns a {
+    display: inline;
+}
+
+.p_btns a:hover {
+    text-decoration: none;
+    border: 1px solid #1963A3;
+}
+
+.p_btns .currentpage {
+    display: block;
+    float: left;
+    margin-right: 4px;
+    padding: 2px 5px;
+    border: 1px solid #1963A3;
+    height: 16px;
+    line-height: 16px;
+    background: #1963A3;
+    color: #fff;
+}
+
+.p_btns .jumppage {
+    float: left;
+    padding-top: 3px;
+}
+
+.p_btns input {
+    width: 40px;
+    border: 1px solid #D1D1D1;
+    height: 15px;
+    font-size: 14px;
+}
+
+.p_btns span {
+    color: #1963a3
+}
+
+
+/*******date-show*********/
+.location_ny .tit {
+    display: block;
+    width: 915px;
+    background: #fdfdfd;
+    padding-right: 10px;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+    margin: 10px 15px;
+    border-bottom: 1px dotted #085483;
+}
+
+.newsList {
+    padding: 0px 15px;
+}
+
+.newsList ul li {
+    height: 35px;
+    line-height: 35px;
+    border-bottom: 1px dotted #888;
+    overflow: hidden;
+}
+
+.newsList ul li a {
+    float: left;
+    display: block;
+    width: 620px;
+    line-height: 35px;
+    color: #44658e;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.newsList ul li span.time {
+    float: right;
+    display: inline-block;
+    width: 70px;
+    line-height: 35px;
+    text-align: right;
+    color: #888;
+}
+
+.newsList ul li a:hover {
+    color: #d11933;
+}
