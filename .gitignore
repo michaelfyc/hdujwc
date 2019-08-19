@@ -29,3 +29,9 @@ build/
 
 ### VS Code ###
 .vscode/
+*.java
+.mvn/wrapper/maven-wrapper.jar
+.mvn/wrapper/maven-wrapper.properties
+fuckrss.log
+mvnw
+mvnw.cmd
