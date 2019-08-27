@@ -34,3 +34,4 @@ Log file and its path also need configuration to adapt to your environment.
 
 Run the project either through IDE or by packaging the project into JAR or WAR.
 
+![](preview.JPG)
