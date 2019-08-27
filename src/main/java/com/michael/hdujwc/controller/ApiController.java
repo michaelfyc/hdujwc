@@ -15,12 +15,18 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * @author michael
+ * SECTION是表单名，具体请看README
+ * LIMIT默认每页15条新闻
+ *
+ */
 @RestController
 public class ApiController {
     private Logger logger = LoggerFactory.getLogger(ApiController.class);
     private static int LIMIT = 15;
     private static String SECTION = "together";
-    private Map jsonMap = new HashMap(1);
+    private Map<String,Object> jsonMap = new HashMap<>(1);
 
     @Autowired
     SectionMapperImpl mapper;
@@ -30,6 +36,7 @@ public class ApiController {
         List<TTL> news = null;
         PageHelper.startPage(page, LIMIT);
         if (section == null) {
+            //如果前端请求不带section,默认查询together汇总表
             news = mapper.getNews(SECTION);
         } else {
             news = mapper.getNews(section);

@@ -16,7 +16,7 @@ public class Task {
     public void crawlHDU() {
         try {
             logger.info("正在爬杭电教务处...");
-
+            //crawler.py 是用python写的爬虫...
             Runtime.getRuntime().exec("python -W ignore crawler.py");
         } catch (IOException e) {
             e.printStackTrace();
