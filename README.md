@@ -48,6 +48,10 @@ Log file and its path also need configuration to adapt to your environment.
 
 On some Linux servers, default python version is 2.x. You have to specify `python3` to run `crawler.py`. If so,on the 20th line of `src/main/java/com/michael/hdujwc/schedule/Task`, rewrite 'python' to 'python3' before you run the project.
 
+
+
+**Update on December,2019:** Data retrieving from database always hits cache, and thus even my python script updates the data every so often, the display on the front end hardly changes unless I manually refresh the tables. The bug may not be fixed for a while. 
+
 ### Run:
 
 Run the project either through IDE or by packaging the project into JAR or WAR.
